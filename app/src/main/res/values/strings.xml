@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Inten App</string>
+    <string name="data">belum ada data</string>
+    <string name="label_name">Nama: belum ada data</string>
+    <string name="label_nim">NIM: belum ada data</string>
+    <string name="label_prodi">Prodi: belum ada data</string>
+    <string name="label_address">Alamat: belum ada data</string>
+    <string name="label_quote">Quote: belum ada data</string>
+</resources>
