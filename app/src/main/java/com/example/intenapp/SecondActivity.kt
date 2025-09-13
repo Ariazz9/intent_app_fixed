@@ -11,14 +11,22 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.txtName.text = "Nama: ${intent.getStringExtra(MainActivity.EXTRA_NAME)}"
-        binding.txtNim.text = "NIM: ${intent.getStringExtra(MainActivity.EXTRA_NIM)}"
-        binding.txtProdi.text = "Prodi: ${intent.getStringExtra(MainActivity.EXTRA_PRODI)}"
-        binding.txtAddress.text = "Alamat: ${intent.getStringExtra(MainActivity.EXTRA_ADDRESS)}"
-        binding.txtQuote.text = "Quote: ${intent.getStringExtra(MainActivity.EXTRA_QUOTE)}"
+
+        val name = intent.getStringExtra(MainActivity.EXTRA_NAME)
+        val nim = intent.getStringExtra(MainActivity.EXTRA_NIM)
+        val prodi = intent.getStringExtra(MainActivity.EXTRA_PRODI)
+        val address = intent.getStringExtra(MainActivity.EXTRA_ADDRESS)
+        val quote = intent.getStringExtra(MainActivity.EXTRA_QUOTE)
+
+
+        if (!name.isNullOrEmpty()) binding.txtName.text = "Nama: $name"
+        if (!nim.isNullOrEmpty()) binding.txtNim.text = "NIM: $nim"
+        if (!prodi.isNullOrEmpty()) binding.txtProdi.text = "Prodi: $prodi"
+        if (!address.isNullOrEmpty()) binding.txtAddress.text = "Alamat: $address"
+        if (!quote.isNullOrEmpty()) binding.txtQuote.text = "Quote: $quote"
     }
 }

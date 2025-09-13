@@ -66,7 +66,8 @@
                 android:layout_marginTop="26dp"
                 android:text="@string/label_name"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <TextView
                 android:id="@+id/txtNim"
@@ -75,7 +76,8 @@
                 android:layout_below="@id/txtName"
                 android:text="@string/label_nim"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <TextView
                 android:id="@+id/txtProdi"
@@ -84,7 +86,8 @@
                 android:layout_below="@id/txtNim"
                 android:text="@string/label_prodi"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <TextView
                 android:id="@+id/txtAddress"
@@ -93,7 +96,8 @@
                 android:layout_below="@id/txtProdi"
                 android:text="@string/label_address"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                 />
 
             <TextView
                 android:id="@+id/txtQuote"
